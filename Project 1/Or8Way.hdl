@@ -7,10 +7,10 @@
  * out = in[0] Or in[1] Or ... Or in[7]
  */
 CHIP Or8Way {
-    IN in[8];
-    OUT out;
+  IN in[8];
+  OUT out;
 
-    PARTS:
+  PARTS:
     Or(a=in[0], b=in[1], out=y1);
     Or(a=in[2], b=in[3], out=y2);
     Or(a=in[4], b=in[5], out=y3);

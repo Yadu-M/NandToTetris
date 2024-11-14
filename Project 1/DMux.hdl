@@ -8,10 +8,10 @@
  *          [0, in] if sel = 1
  */
 CHIP DMux {
-    IN in, sel;
-    OUT a, b;
+  IN in, sel;
+  OUT a, b;
 
-    PARTS:
+  PARTS:
     Not(in=sel, out=selNot);    // !sel
 
     And(a=in, b=selNot, out=a); // in * !sel = a

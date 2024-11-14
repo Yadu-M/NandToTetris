@@ -7,10 +7,10 @@
  * if (in) out = 0, else out = 1
  */
 CHIP Not {
-    IN in;
-    OUT out;
+  IN in;
+  OUT out;
 
-    PARTS:
+  PARTS:
     Nand(a=in , b=in , out= out);
 
     // !(in * in) = !in + !in = !in

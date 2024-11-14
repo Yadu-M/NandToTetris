@@ -7,10 +7,10 @@
  * if (a or b) out = 1, else out = 0 
  */
 CHIP Or {
-    IN a, b;
-    OUT out;
+  IN a, b;
+  OUT out;
 
-    PARTS:
+  PARTS:
     Not(in=a, out=aNot);
     Not(in=b, out=bNot);
     Nand(a=aNot , b=bNot , out=out);    
